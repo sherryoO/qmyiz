@@ -212,8 +212,8 @@
     </div>
 </div>
 <div class="to-otherlink">
-    <a href="">VR全景</a>
-    <a href="">查看案例</a>
+    <a href="http://720yun.com/t/454jk54wza7">VR全景</a>
+    <a href="javascript:void(0)" id="toCaseList">查看案例</a>
 </div>
 <div class="bdsharebuttonbox share-wrap" data-tag="share_1">
     分享
@@ -242,7 +242,10 @@
 <script src="../public/js/jquery-3.1.1.min.js"></script>
 <script src="../public/js/swiper.min.js"></script>
 <script>
-    var swiper1 = new Swiper('.swiper-container');
+    var sampleRoomSwiper = new Swiper('.swiper-container');
+    $('#toCaseList').on('click',function(){
+        sampleRoomSwiper.slideTo(5,1000,false);
+    })
     //百度分享接口
     if(window._bd_share_main) { //先执行初始化bdshare
         window._bd_share_main.init();
