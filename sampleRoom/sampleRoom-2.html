@@ -220,9 +220,9 @@
 </div>
 <div class="bdsharebuttonbox share-wrap" data-tag="share_1">
     分享
-    <a href="javascript:void(0);" class="bds_weixin icon-font bds_share" data-cmd="weixin" title="分享到微信" data-id="/index/index.html"><i>&#xe600;</i></a>
-    <a href="javascript:void(0);" class="bds_sqq icon-font bds_share" data-cmd="sqq" title="分享到新浪微博" data-id="/index/index.html"><i>&#xe728;</i></a>
-    <a href="javascript:void(0);" class="bds_qzone icon-font bds_share" data-cmd="qzone" title="分享到QQ好友" data-id="/index/index.html"><i>&#xe7dc;</i></a>
+    <a href="javascript:void(0);" class="bds_weixin icon-font bds_share" data-cmd="weixin" title="分享到微信" data-id="/index/index.html">&#xe601;<i></i></a>
+    <a href="javascript:void(0);" class="bds_sqq icon-font bds_share" data-cmd="sqq" title="分享到新浪微博" data-id="/index/index.html">&#xe73e;<i></i></a>
+    <a href="javascript:void(0);" class="bds_qzone icon-font bds_share" data-cmd="qzone" title="分享到QQ好友" data-id="/index/index.html">&#xe655;<i></i></a>
 </div>
 <div class="style-nav">
     <ul>
@@ -257,18 +257,7 @@
         common: {
             bdText: '亿家图库',
             bdDesc: '自定义分享摘要',
-            bdUrl: 'http://www.qmyiz.com',
-            onBeforeClick: function(cmd, config) {
-                var forwardCount = data.detail.share,
-                    forwardChannel;
-                if(cmd == 'weixin') {
-                    forwardChannel = '微信';
-                } else if(cmd == 'tsina') {
-                    forwardChannel = '新浪微博';
-                } else if(cmd == 'sqq') {
-                    forwardChannel = 'QQ分享';
-                }
-            }
+            bdUrl: 'http://www.qmyiz.com'
         },
         share: [{
             "tag": "share_1",

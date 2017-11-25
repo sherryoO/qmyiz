@@ -1,0 +1,24 @@
+.container {
+  padding: 1rem;
+}
+.index .nav ul li {
+  float: left;
+  width: 16.66% ;
+  text-align: center;
+}
+.index .nav ul li img {
+  display: block;
+  width: 80%;
+  margin: 0 auto;
+}
+.index .nav ul li p {
+  font-size: 0.8rem;
+  color: #373737;
+  line-height: 1.6rem;
+}
+.index .con-img img {
+  padding-bottom: .8rem;
+}
+.index .bott {
+  background-color: #f2f2f2;
+}

@@ -257,18 +257,7 @@
         common: {
             bdText: '亿家图库',
             bdDesc: '自定义分享摘要',
-            bdUrl: 'http://www.qmyiz.com',
-            onBeforeClick: function(cmd, config) {
-                var forwardCount = data.detail.share,
-                    forwardChannel;
-                if(cmd == 'weixin') {
-                    forwardChannel = '微信';
-                } else if(cmd == 'tsina') {
-                    forwardChannel = '新浪微博';
-                } else if(cmd == 'sqq') {
-                    forwardChannel = 'QQ分享';
-                }
-            }
+            bdUrl: 'http://www.qmyiz.com'
         },
         share: [{
             "tag": "share_1",

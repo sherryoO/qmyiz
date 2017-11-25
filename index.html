@@ -7,9 +7,84 @@
 	<meta content="yes" name="apple-mobile-web-app-capable">
 	<meta content="black" name="apple-mobile-web-app-status-bar-style">
 	<meta content="telephone=no" name="format-detection">
+	<link rel="stylesheet" href="public/css/base.css">
+    <link rel="stylesheet" href="public/css/swiper.min.css">
+    <link rel="stylesheet" href="public/css/index.css">
 	<title>首页</title>
 </head>
-<body>
+<body class="index">
+<div class="swiper-container" >
+	<div class="swiper-wrapper">
+		<div class="swiper-slide">
+			<img src="public/images/banner-index-1.jpg" alt="" title="">
+		</div>
+		<div class="swiper-slide">
+			<img src="public/images/banner-index-1.jpg" alt="" title="">
+		</div>
+		<div class="swiper-slide">
+			<img src="public/images/banner-index-1.jpg" alt="" title="">
+		</div>
+	</div>
+	<div class="swiper-pagination"></div>
+</div>
 
+<div class="nav clearfix container">
+	<ul>
+		<li>
+			<a href="">
+				<img src="public/images/nav-index-1.jpg" alt="挪威假日" title="挪威假日">
+				<p>挪威假日</p>
+			</a>
+		</li>
+		<li>
+			<a href="">
+				<img src="public/images/nav-index-2.jpg" alt="加州阳光" title="加州阳光">
+				<p>加州阳光</p>
+			</a>
+	
+		</li>
+		<li>
+			<a href="">
+				<img src="public/images/nav-index-3.jpg" alt="本味生活" title="本味生活">
+				<p>本味生活</p>
+			</a>
+		</li>
+		<li>
+			<a href="">
+				<img src="public/images/nav-index-4.jpg" alt="维港风华" title="维港风华">
+				<p>维港风华</p>
+			</a>
+		</li>
+		<li>
+			<a href="">
+				<img src="public/images/nav-index-5.jpg" alt="爱琴海湾" title="爱琴海湾">
+				<p>爱琴海湾</p>
+			</a>
+		</li>
+		<li>
+			<a href="">
+				<img src="public/images/nav-index-6.jpg" alt="韵雅东方" title="韵雅东方">
+				<p>韵雅东方</p>
+			</a>
+		</li>
+	</ul>
+	
+</div>
+
+<div class="con-img container bott">
+	<img src="public/images/img-index-1.jpg" alt="" title="" />
+	<img src="public/images/img-index-2.jpg" alt="" title="" />
+</div>
+<script src="public/js/jquery-3.1.1.min.js"></script>
+<script src="public/js/swiper.min.js"></script>
+<script>
+	var indexSwiper = new Swiper ('.swiper-container', {
+    direction: 'horizontal',
+    loop: true,
+    autoplay:2000,
+    //分页器
+    pagination: '.swiper-pagination',
+  })        
+</script>
 </body>
 </html>
