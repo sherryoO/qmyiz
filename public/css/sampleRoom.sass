@@ -1,49 +1,6 @@
 $main-color: #4871b2
 $light-orange: #ff5a00
 $border-radius: .4rem
-.main-nav
-  position: fixed
-  bottom: 0
-  background: $main-color
-  width: 100%
-  z-index: 2
-  ul
-    width: 100%
-    li
-      float: left
-      width: 25%
-      a
-        color: #fff
-        text-align: center
-        padding: .6rem 0
-        display: block
-        font-size: .9rem
-      i
-        font-size: 1.6rem
-.style-nav
-  position: fixed
-  right: 0
-  top: 40%
-  transform: translate(0,-50%)
-  background: rgba(0,0,0,.4)
-  width: 6rem
-  z-index: 2
-  ul
-    width: 100%
-    li
-      width: 100%
-      border-bottom: #fff solid 1px
-      &:last-of-type
-        border-bottom: none
-      a
-        padding: .5rem .4rem
-        color: #fff
-        display: block
-        i
-          position: relative
-          top: -.1rem
-          padding-left: .2rem
-          font-size: .6rem
 .to-otherlink
   position: fixed
   top: 1rem
@@ -58,47 +15,6 @@ $border-radius: .4rem
     display: block
     border-radius: 0 $border-radius $border-radius 0
     margin: 1rem 0
-.share-wrap
-  position: fixed
-  top: 1.25rem
-  right: 0
-  background: rgba(0,0,0,.4)
-  padding: .2rem 1.5rem .2rem .5rem
-  border-radius: 8px 0 0 8px
-  color: #fff
-  z-index: 2
-  a
-    position: relative
-    display: inline-block
-    width: 1.4rem
-    height: 1.4rem !important
-    line-height: 1.4rem !important
-    text-align: center
-    border-radius: 50%
-    color: #54b3ea
-    margin: 0 0 0 .2rem !important
-    float: none !important
-    padding-left: 0 !important
-    background-image: none !important
-    font-size: 1.2rem !important
-    top: .1rem
-    i
-      position: absolute
-      width: .8rem
-      height: .8rem
-      top: 50%
-      left: 50%
-      border-radius: 50%
-      transform: translate(-50%,-50%)
-      background: #fff
-      display: block
-      z-index: -1
-    &:first-child
-      color: #19d100
-      font-size: 1.4rem
-    &:last-child
-      color: #f5c240
-      font-size: 1.4rem
 .container
   padding: 1rem 1rem 7rem
   .common-img-wrap
@@ -119,57 +35,6 @@ $border-radius: .4rem
         left: 0
         background: $light-orange
         display: block
-  .entered-wrap
-    border-radius: $border-radius
-    background: $main-color
-    padding: 1.2rem 1.6rem
-    overflow: hidden
-    >div
-      position: relative
-      width: 100%
-      float: left
-      i
-        position: absolute
-        left: .3rem
-        font-size: 1.3em
-        color: #bababa
-      input
-        padding: .4rem .2rem .4rem 2rem
-        width: 100%
-      &.name-input
-        width: 45%
-        margin-right: 4%
-      &.tel-input
-        width: 51%
-        i
-          left: .2rem
-          font-size: 1.8rem
-      &.result-wrap
-        width: 100%
-        margin-top: .5rem
-        overflow: hidden
-        .yzm-input
-          position: relative
-          width: 70%
-          float: left
-          i
-            top: .3rem
-          a
-            position: absolute
-            right: 0
-            top: .23rem
-            color: $light-orange
-            padding: 0 .5rem
-            border-left: rgba(83,83,83,.3) solid 1px
-            display: block
-        >a
-          display: block
-          width: 25%
-          float: right
-          background: $light-orange
-          text-align: center
-          color: #fff
-          padding: .24rem 0
   .info-wrap
     width: 100%
     margin-top: 2.5rem

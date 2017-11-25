@@ -11,7 +11,7 @@ small, strong, sub, sup, var,
 b, i,
 dl, dt, dd, ol, ul, li, fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, figcaption, figure, 
+article, aside, canvas, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section, summary,
 time, mark, audio, video,hr {
     margin:0;
@@ -38,8 +38,8 @@ html,body{
 }
 body{
     width: 100%;
-    height: 100%; 
-    overflow-x: hidden; 
+    height: 100%;
+    overflow-x: hidden;
 }
 body{
     -webkit-user-select: none; /*禁止页面文字选择*/
@@ -102,7 +102,7 @@ a,li,div,button,input,select,textarea,em,a:focus,button:focus,input:focus,select
 /* 去除iphone ipad 设备默认按钮样式 */
 input[type="submit"], input[type="reset"], input[type="button"], button{
     -webkit-appearance: none;
-    border-radius: 0; 
+    border-radius: 0;
 }
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
@@ -125,6 +125,145 @@ input::-webkit-input-placeholder, textarea::-webkit-input-placeholder { color: #
 @media screen and (min-width: 440px) {
     html {font-size: 18px;}
 }
+/*分享公共样式*/
+.share-wrap {
+    position: fixed;
+    top: 1.25rem;
+    right: 0;
+    background: rgba(0, 0, 0, 0.4);
+    padding: 0.2rem 1.5rem 0.2rem 0.5rem;
+    border-radius: 8px 0 0 8px;
+    color: #fff;
+    z-index: 2; }
+.share-wrap a {
+    position: relative;
+    display: inline-block;
+    width: 1.4rem;
+    height: 1.4rem !important;
+    line-height: 1.4rem !important;
+    text-align: center;
+    border-radius: 50%;
+    color: #54b3ea;
+    margin: 0 0 0 0.2rem !important;
+    float: none !important;
+    padding-left: 0 !important;
+    background-image: none !important;
+    font-size: 1.2rem !important;
+    top: 0.1rem; }
+.share-wrap a i {
+    position: absolute;
+    width: 0.8rem;
+    height: 0.8rem;
+    top: 50%;
+    left: 50%;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    display: block;
+    z-index: -1; }
+.share-wrap a:first-child {
+    color: #19d100;
+    font-size: 1.4rem; }
+.share-wrap a:last-child {
+    color: #f5c240;
+    font-size: 1.4rem; }
+/*风格导航公共样式*/
+.style-nav {
+    position: fixed;
+    right: 0;
+    top: 40%;
+    transform: translate(0, -50%);
+    background: rgba(0, 0, 0, 0.4);
+    width: 6rem;
+    z-index: 2; }
+.style-nav ul {
+    width: 100%; }
+.style-nav ul li {
+    width: 100%;
+    border-bottom: #fff solid 1px; }
+.style-nav ul li:last-of-type {
+    border-bottom: none; }
+.style-nav ul li a {
+    padding: 0.5rem 0.4rem;
+    color: #fff;
+    display: block; }
+.style-nav ul li a i {
+    position: relative;
+    top: -0.1rem;
+    padding-left: 0.2rem;
+    font-size: 0.6rem; }
+/*底部主导航公共样式*/
+.main-nav {
+    position: fixed;
+    bottom: 0;
+    background: #4871b2;
+    width: 100%;
+    z-index: 2; }
+.main-nav ul {
+    width: 100%; }
+.main-nav ul li {
+    float: left;
+    width: 25%; }
+.main-nav ul li a {
+    color: #fff;
+    text-align: center;
+    padding: 0.6rem 0;
+    display: block;
+    font-size: 0.9rem; }
+.main-nav ul li i {
+    font-size: 1.6rem; }
+/*报名板块公共样式*/
+.entered-wrap {
+    border-radius: 0.4rem;
+    background: #4871b2;
+    padding: 1.2rem 1.6rem;
+    overflow: hidden; }
+.entered-wrap > div {
+    position: relative;
+    width: 100%;
+    float: left; }
+.entered-wrap > div i {
+    position: absolute;
+    left: 0.3rem;
+    font-size: 1.3em;
+    color: #bababa; }
+.entered-wrap > div input {
+    padding: 0.4rem 0.2rem 0.4rem 2rem;
+    width: 100%; }
+.entered-wrap > div.name-input {
+    width: 45%;
+    margin-right: 4%; }
+.entered-wrap > div.tel-input {
+    width: 51%; }
+.entered-wrap > div.tel-input i {
+    left: 0.2rem;
+    font-size: 1.8rem; }
+.entered-wrap > div.result-wrap {
+    width: 100%;
+    margin-top: 0.5rem;
+    overflow: hidden; }
+.entered-wrap > div.result-wrap .yzm-input {
+    position: relative;
+    width: 70%;
+    float: left; }
+.entered-wrap > div.result-wrap .yzm-input i {
+    top: 0.3rem; }
+.entered-wrap > div.result-wrap .yzm-input a {
+    position: absolute;
+    right: 0;
+    top: 0.23rem;
+    color: #ff5a00;
+    padding: 0 0.5rem;
+    border-left: rgba(83, 83, 83, 0.3) solid 1px;
+    display: block; }
+.entered-wrap > div.result-wrap > a {
+    display: block;
+    width: 25%;
+    float: right;
+    background: #ff5a00;
+    text-align: center;
+    color: #fff;
+    padding: 0.24rem 0; }
 @font-face {
     font-family: 'iconfont';  /* project id 485644 */
     src: url('//at.alicdn.com/t/font_485644_irb4n9kvewrhehfr.eot');
