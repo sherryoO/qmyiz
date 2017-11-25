@@ -1,0 +1,184 @@
+.main-nav {
+  position: fixed;
+  bottom: 0;
+  background: #4871b2;
+  width: 100%;
+  z-index: 2; }
+  .main-nav ul {
+    width: 100%; }
+    .main-nav ul li {
+      float: left;
+      width: 25%; }
+      .main-nav ul li a {
+        color: #fff;
+        text-align: center;
+        padding: 0.8rem 0;
+        display: block; }
+      .main-nav ul li i {
+        font-size: 2rem; }
+
+.style-nav {
+  position: fixed;
+  right: 0;
+  top: 40%;
+  transform: translate(0, -50%);
+  background: rgba(0, 0, 0, 0.4);
+  width: 6rem;
+  z-index: 2; }
+  .style-nav ul {
+    width: 100%; }
+    .style-nav ul li {
+      width: 100%;
+      border-bottom: #fff solid 1px; }
+      .style-nav ul li:last-of-type {
+        border-bottom: none; }
+      .style-nav ul li a {
+        padding: 0.5rem 0.4rem;
+        color: #fff;
+        display: block; }
+        .style-nav ul li a i {
+          position: relative;
+          top: -0.1rem;
+          padding-left: 0.2rem;
+          font-size: 0.6rem; }
+
+.to-otherlink {
+  position: fixed;
+  top: 1rem;
+  left: 0;
+  z-index: 2; }
+  .to-otherlink a {
+    color: #fff;
+    width: 6rem;
+    background: #2b8cff;
+    text-align: right;
+    padding: 0.25rem 1rem 0.25rem 0;
+    display: block;
+    border-radius: 0 0.4rem 0.4rem 0;
+    margin: 1rem 0; }
+
+.share-wrap {
+  position: fixed;
+  top: 1.25rem;
+  right: 1.25rem;
+  color: #fff;
+  z-index: 2; }
+  .share-wrap a {
+    display: inline-block;
+    width: 1.4rem;
+    height: 1.4rem !important;
+    line-height: 1.4rem !important;
+    text-align: center;
+    border-radius: 50%;
+    color: #fff;
+    background: #4cafe9;
+    margin: 0 0 0 0.2rem !important;
+    float: none !important;
+    padding-left: 0 !important;
+    background-image: none !important; }
+    .share-wrap a:first-child {
+      position: relative;
+      font-size: 1.1rem;
+      background: #19d100; }
+    .share-wrap a:last-child {
+      line-height: 1.2rem;
+      background: #f5c240; }
+
+.container {
+  padding: 1rem; }
+  .container .common-img-wrap {
+    position: relative;
+    padding-bottom: 1rem; }
+    .container .common-img-wrap img {
+      width: 100%; }
+    .container .common-img-wrap span {
+      position: absolute;
+      color: #fff; }
+    .container .common-img-wrap.sampleRoom-1 span {
+      font-size: 0.8rem;
+      width: 11rem;
+      border-radius: 0.4rem;
+      padding: 0.3rem 0.4rem;
+      bottom: 2.2rem;
+      left: 0;
+      background: #ff5a00;
+      display: block; }
+  .container .entered-wrap {
+    border-radius: 0.4rem;
+    background: #4871b2;
+    padding: 1.2rem 1.6rem;
+    overflow: hidden; }
+    .container .entered-wrap > div {
+      position: relative;
+      width: 100%;
+      float: left; }
+      .container .entered-wrap > div i {
+        position: absolute;
+        left: 0.3rem;
+        font-size: 1.3em;
+        color: #bababa; }
+      .container .entered-wrap > div input {
+        padding: 0.4rem 0.2rem 0.4rem 2rem;
+        width: 100%; }
+      .container .entered-wrap > div.name-input {
+        width: 45%;
+        margin-right: 4%; }
+      .container .entered-wrap > div.tel-input {
+        width: 51%; }
+        .container .entered-wrap > div.tel-input i {
+          left: 0.2rem;
+          font-size: 1.8rem; }
+      .container .entered-wrap > div.result-wrap {
+        width: 100%;
+        margin-top: 0.5rem;
+        overflow: hidden; }
+        .container .entered-wrap > div.result-wrap .yzm-input {
+          position: relative;
+          width: 70%;
+          float: left; }
+          .container .entered-wrap > div.result-wrap .yzm-input i {
+            top: 0.3rem; }
+          .container .entered-wrap > div.result-wrap .yzm-input a {
+            position: absolute;
+            right: 0;
+            top: 0.23rem;
+            color: #ff5a00;
+            padding: 0 0.5rem;
+            border-left: rgba(83, 83, 83, 0.3) solid 1px;
+            display: block; }
+        .container .entered-wrap > div.result-wrap > a {
+          display: block;
+          width: 25%;
+          float: right;
+          background: #ff5a00;
+          text-align: center;
+          color: #fff;
+          padding: 0.24rem 0; }
+  .container .info-wrap {
+    width: 100%;
+    margin-top: 2.5rem;
+    overflow: hidden; }
+    .container .info-wrap li {
+      width: 48%;
+      float: left;
+      margin: 0 4% 1rem 0; }
+      .container .info-wrap li > h3 {
+        padding-top: 0.2rem; }
+      .container .info-wrap li:nth-child(even) {
+        margin-right: 0; }
+      .container .info-wrap li .info-container {
+        position: relative;
+        width: 100%; }
+        .container .info-wrap li .info-container img {
+          width: 100%;
+          height: 100%; }
+        .container .info-wrap li .info-container .info-text {
+          position: absolute;
+          bottom: 0;
+          width: 100%;
+          background: rgba(255, 255, 255, 0.5);
+          padding: 0.1rem 0.4rem;
+          color: #333;
+          font-size: 0.8rem; }
+
+/*# sourceMappingURL=sampleRoom.css.map */
