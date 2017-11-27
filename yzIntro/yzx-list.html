@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <meta content="telephone=no" name="format-detection">
+    <title>易装秀</title>
+    <link type="text/css" rel="stylesheet" href="../public/css/layer.css" />
+    <link type="text/css" rel="stylesheet" href="../public/css/base.css" />
+    <link type="text/css" rel="stylesheet" href="../public/css/index.css" />
+    <link type="text/css" rel="stylesheet" href="../public/css/yzx-list.css" />
+</head>
+<body class="yzintroH">
+<div id="yzintro"></div><!--易装简介导航容器-->
+<div id="list-box" @touchmove="scrollRequestNextPage">
+    <ul class="list-box">
+        <li v-for="item in listData" :key="item.id">
+            <a :href="'./yzx-article-detail.html?id=' + item.id">
+                <div class="left-box">
+                    <h4>{{ item.atitle }}</h4>
+                    <p>{{ item.createtime | toTimeArray('0', true) }}</p>
+                </div>
+                <div class="right-box">
+                    <div class="img-responsive">
+                        <img :src="item.simpleimg" />
+                    </div>
+                </div>
+            </a>
+        </li>
+    </ul>
+    <p class="up-slide-load" v-show="!noMoreData">
+        上拉以刷新...
+    </p>
+</div>
+
+<nav></nav><!--公共底部主导航容器-->
+
+<script src="../public/js/jquery-3.1.1.min.js"></script>
+<script src="../public/js/layer.js"></script>
+<script src="../public/js/base.js"></script>
+<script src="../public/js/vue.min.js"></script>
+<script src="../public/js/yzx-list.js"></script>
+</body>
+</html>

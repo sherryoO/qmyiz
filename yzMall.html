@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <meta content="telephone=no" name="format-detection">
+    <link rel="stylesheet" href="public/css/base.css">
+    <link rel="stylesheet" href="public/css/index.css">
+    <title>家居家具</title>
+</head>
+<body>
+    <div id="yzMall">
+        <div class="mallTitle">
+            <ul class="clearfix">
+                <li class="active">航母卖场</li>
+                <li>家具建材</li>
+            </ul>
+        </div>
+        <div class="mallWrap">
+            <div class="hmmc mallBox">
+                <img src="public/images/hmmcBan.jpg" alt="">
+                <div class="banText">
+                    <p>全民易装新建15000方航母展厅开张迎客</p>
+                    <p>新建15000方航母展厅品牌更丰富，有箭牌、科勒、西门子、潜水艇、法恩莎、郎玛、柏高等等，囊括当下国际国内大部分装修材料的一线品牌，涵盖家居、地暖、地砖、门窗、吊顶、卫浴、灯饰等等品类。商品全为厂家直销，极大的方便了客户，也能让客户切实享受到全民易装给予的最大优惠！</p>
+                </div>
+                <div class="offblock"></div>
+                <div class="hmmcGoods">
+                    <ul class="clearfix">
+                        <li>
+                            <img src="public/images/hmmc1.jpg" alt="">
+                            <div class="goodsIntro">
+                                <p>双虎家私钢化玻璃茶几电视柜组合</p>
+                                <p>价格：<span>2??9元</span></p>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="public/images/hmmc2.jpg" alt="">
+                            <div class="goodsIntro">
+                                <p>JOMOO九牧花洒 方形淋浴顶喷</p>
+                                <p>价格：<span>8?9元</span></p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="entered"></div>
+            </div>
+            <div class="jjjc mallBox" style="display:none;">
+                <div class="hmmcGoods">
+                    <ul class="clearfix">
+                        <li>
+                            <img src="public/images/hmmc1.jpg" alt="">
+                            <div class="goodsIntro">
+                                <p>双虎家私钢化玻璃茶几电视柜组合</p>
+                                <p>价格：<span>2??9元</span></p>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="public/images/hmmc2.jpg" alt="">
+                            <div class="goodsIntro">
+                                <p>JOMOO九牧花洒 方形淋浴顶喷</p>
+                                <p>价格：<span>8?9元</span></p>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="public/images/jjjj-3.jpg" alt="">
+                            <div class="goodsIntro">
+                                <p>全友家私韩式双人高箱床</p>
+                                <p>价格：<span>3??9元</span></p>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="public/images/jjjj-4.jpg" alt="">
+                            <div class="goodsIntro">
+                                <p>欧琳不锈钢水槽双槽套餐</p>
+                                <p>价格：<span>1??9元</span></p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <img src="public/images/jjjcBan.jpg" alt="">
+                <div class="banText">
+                    <p>全民易装新建15000方航母展厅开张迎客</p>
+                    <p>新建15000方航母展厅品牌更丰富，有箭牌、科勒、西门子、潜水艇、法恩莎、郎玛、柏高等等，囊括当下国际国内大部分装修材料的一线品牌，涵盖家居、地暖、地砖、门窗、吊顶、卫浴、灯饰等等品类。商品全为厂家直销，极大的方便了客户，也能让客户切实享受到全民易装给予的最大优惠！</p>
+                </div>
+                <div class="entered"></div>
+            </div>
+        </div>
+    </div>
+
+    <div id="share"></div><!--公共分享容器-->
+    <nav></nav><!--公共底部主导航容器-->
+<script src="public/js/jquery-3.1.1.min.js"></script>
+<script src="public/js/base.js"></script>
+<script>
+    $(function(){
+        $('.mallTitle ul li').on('click',function(){
+            $(this).addClass('active').siblings('li').removeClass('active');
+            var index = $(this).index();
+            $('.mallWrap .mallBox').eq(index).show().siblings('.mallBox').hide();
+        })
+    })
+
+</script>
+</body>
+</html>

@@ -2,7 +2,7 @@
 <html lang="zh">
 <head>
 	<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
 	<meta content="yes" name="apple-mobile-web-app-capable">
 	<meta content="black" name="apple-mobile-web-app-status-bar-style">
@@ -28,57 +28,62 @@
 	<div class="swiper-pagination"></div>
 </div>
 
-<div class="nav clearfix container">
-	<ul>
+<div class="nav container">
+	<ul class="clearfix">
 		<li>
-			<a href="">
+			<a href="sampleRoom/sampleRoom-1.html">
 				<img src="public/images/nav-index-1.jpg" alt="挪威假日" title="挪威假日">
 				<p>挪威假日</p>
 			</a>
 		</li>
 		<li>
-			<a href="">
+			<a href="sampleRoom/sampleRoom-2.html">
 				<img src="public/images/nav-index-2.jpg" alt="加州阳光" title="加州阳光">
 				<p>加州阳光</p>
 			</a>
-	
+
 		</li>
 		<li>
-			<a href="">
+			<a href="sampleRoom/sampleRoom-3.html">
 				<img src="public/images/nav-index-3.jpg" alt="本味生活" title="本味生活">
 				<p>本味生活</p>
 			</a>
 		</li>
 		<li>
-			<a href="">
+			<a href="sampleRoom/sampleRoom-4.html">
 				<img src="public/images/nav-index-4.jpg" alt="维港风华" title="维港风华">
 				<p>维港风华</p>
 			</a>
 		</li>
 		<li>
-			<a href="">
+			<a href="sampleRoom/sampleRoom-5.html">
 				<img src="public/images/nav-index-5.jpg" alt="爱琴海湾" title="爱琴海湾">
 				<p>爱琴海湾</p>
 			</a>
 		</li>
 		<li>
-			<a href="">
+			<a href="sampleRoom/sampleRoom-6.html">
 				<img src="public/images/nav-index-6.jpg" alt="韵雅东方" title="韵雅东方">
 				<p>韵雅东方</p>
 			</a>
 		</li>
 	</ul>
-	
-</div>
 
+</div>
 <div class="con-img container bott">
-	<img src="public/images/img-index-1.jpg" alt="" title="" />
-	<img src="public/images/img-index-2.jpg" alt="" title="" />
+	<a href="activity.html">
+		<img src="public/images/img-index-1.jpg" alt="" title="" />
+	</a>
+	<a href="yzMall.html">
+		<img src="public/images/img-index-2.jpg" alt="" title="" />
+	</a>
 	<div class="entered"></div>
 </div>
+<div id="share"></div><!--公共分享容器-->
 <nav></nav><!--公共底部主导航容器-->
 <script src="public/js/jquery-3.1.1.min.js"></script>
 <script src="public/js/swiper.min.js"></script>
+<script src="public/js/base.js"></script>
 <script>
 	var indexSwiper = new Swiper ('.swiper-container', {
     direction: 'horizontal',
@@ -87,8 +92,6 @@
     //分页器
     pagination: '.swiper-pagination',
   })
-	$('nav').load("include/main-nav.html");
-	$('.entered').load("include/entered.html");
 </script>
 </body>
 </html>

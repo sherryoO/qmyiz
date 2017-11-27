@@ -46,6 +46,7 @@ body{
     -webkit-text-size-adjust: none; /*禁止文字自动调整大小*/
     -webkit-overflow-scrolling: touch; /*局部滚动*/
 }
+a{color: #333;}
 a,img{
     -webkit-touch-callout:none;/*禁用长按页面时的弹出菜单(iOS下有效)*/
 }
@@ -134,7 +135,7 @@ input::-webkit-input-placeholder, textarea::-webkit-input-placeholder { color: #
     padding: 0.2rem 1.5rem 0.2rem 0.5rem;
     border-radius: 8px 0 0 8px;
     color: #fff;
-    z-index: 2; }
+    z-index: 9; }
 .share-wrap a {
     position: relative;
     display: inline-block;
@@ -198,7 +199,7 @@ input::-webkit-input-placeholder, textarea::-webkit-input-placeholder { color: #
     bottom: 0;
     background: #4871b2;
     width: 100%;
-    z-index: 2; }
+    z-index: 19; }
 .main-nav ul {
     width: 100%; }
 .main-nav ul li {
@@ -207,7 +208,7 @@ input::-webkit-input-placeholder, textarea::-webkit-input-placeholder { color: #
 .main-nav ul li a {
     color: #fff;
     text-align: center;
-    padding: 0.6rem 0;
+    padding: 0.5rem 0;
     display: block;
     font-size: 0.9rem; }
 .main-nav ul li i {
@@ -264,11 +265,41 @@ input::-webkit-input-placeholder, textarea::-webkit-input-placeholder { color: #
     text-align: center;
     color: #fff;
     padding: 0.24rem 0; }
+/*易装简介导航公共样式*/
+.yzintro-nav {
+    background: #fff;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 3;
+}
+.yzintro-nav ul {
+    width: 100%;
+}
+.yzintro-nav ul li {
+    float: left;
+    width: 25%;
+}
+.yzintro-nav ul li a {
+    text-align: center;
+    padding: 0.7rem 0;
+    display: block;
+    font-size: 0.9rem;
+}
+.yzintro-nav ul li a img {
+    width: 40%;
+    margin: 0 auto;
+    margin-bottom: .3rem;
+}
+.yzintroH{
+    padding: 5.4rem 0 3.35rem;
+}
 @font-face {
-    font-family: 'iconfont';  /* project id 485644 */
-    src: url('//at.alicdn.com/t/font_485644_irb4n9kvewrhehfr.eot');
-    src: url('//at.alicdn.com/t/font_485644_irb4n9kvewrhehfr.eot?#iefix') format('embedded-opentype'),
-    url('//at.alicdn.com/t/font_485644_irb4n9kvewrhehfr.woff') format('woff'),
-    url('//at.alicdn.com/t/font_485644_irb4n9kvewrhehfr.ttf') format('truetype'),
-    url('//at.alicdn.com/t/font_485644_irb4n9kvewrhehfr.svg#iconfont') format('svg');
+  font-family: 'iconfont';  /* project id 485644 */
+  src: url('//at.alicdn.com/t/font_485644_ivanuurhj8twqaor.eot');
+  src: url('//at.alicdn.com/t/font_485644_ivanuurhj8twqaor.eot?#iefix') format('embedded-opentype'),
+  url('//at.alicdn.com/t/font_485644_ivanuurhj8twqaor.woff') format('woff'),
+  url('//at.alicdn.com/t/font_485644_ivanuurhj8twqaor.ttf') format('truetype'),
+  url('//at.alicdn.com/t/font_485644_ivanuurhj8twqaor.svg#iconfont') format('svg');
 }
