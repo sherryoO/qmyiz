@@ -74,7 +74,7 @@ new Vue({
             var that = this;
             fn = fn || function () {};
             $.ajax({
-                url: 'http://10.100.10.47:8888/ecs/article/selectWapArticle',
+                url: '//10.100.10.47:8888/ecs/article/selectWapArticle',
                 type: 'POST',
                 data: {
                     page: this.nowPage,
@@ -82,7 +82,6 @@ new Vue({
                 }
             })
                 .then(function (response) {
-                    console.log(response);
                     if(response.code === '200') {
                         that.listData = that.listData.concat(response.detail);
                         fn();
